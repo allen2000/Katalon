@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>upload</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b599f258-4d9e-4091-b135-a539b19d0122</testCaseGuid>
+   <variable>
+      <defaultValue>'C:\\Users\\Administrator\\Downloads\\Upload Template.pdf'</defaultValue>
+      <description></description>
+      <id>555b7ac0-5274-48a7-a3a8-691da3e7b634</id>
+      <masked>false</masked>
+      <name>Ufile</name>
+   </variable>
+</TestCaseEntity>
