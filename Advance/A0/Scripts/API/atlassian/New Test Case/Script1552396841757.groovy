@@ -13,3 +13,10 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+response = WS.sendRequest(findTestObject('API/atlassian/serverInfo'))
+
+WS.verifyResponseStatusCode(response, 200)
+
+'111'
+WS.verifyElementPropertyValue(response, 'version', '1001.0.0-SNAPSHOT')
+
