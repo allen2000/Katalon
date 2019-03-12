@@ -17,6 +17,8 @@ response = WS.sendRequest(findTestObject('API/atlassian/serverInfo'))
 
 WS.verifyResponseStatusCode(response, 200)
 
-'111'
+'single parameter check'
 WS.verifyElementPropertyValue(response, 'version', '1001.0.0-SNAPSHOT')
+
+WS.verifyElementPropertyValue(response, 'versionNumbers[0]', '1001')
 
