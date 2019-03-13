@@ -13,21 +13,11 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-response = WS.sendRequest(findTestObject('API/atlassian/serverInfo'))
+response = WS.sendRequest(findTestObject('API/openapi/femaleName'))
 
-WS.verifyResponseStatusCode(response, 200)
+WS.verifyElementPropertyValue(response, 'msg', '成功!')
 
-'single parameter check'
-WS.verifyElementPropertyValue(response, 'version', '1001.0.0-SNAPSHOT')
+WS.verifyElementsCount(response, '', 3)
 
-WS.verifyElementPropertyValue(response, 'versionNumbers[0]', '1001')
-
-WS.verifyResponseStatusCodeInRange(response, 100, 300)
-
-WS.verifyElementsCount(response, '', 8)
-
-WS.containsString(response, 'Cloud', false)
-
-'just foe xml?'
-not_run: WS.verifyElementText(response, 'deploymentType', 'Cloud')
+WS.verifyElementsCount(response, 'data', 20)
 

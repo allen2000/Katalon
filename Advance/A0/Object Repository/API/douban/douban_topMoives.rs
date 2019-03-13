@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>serverInfo</name>
+   <name>douban_topMoives</name>
    <tag></tag>
-   <elementGuidId>4ac17da6-28d9-4eab-ae41-c082898858a7</elementGuidId>
+   <elementGuidId>3f672d3b-1b36-4458-b3c0-d41e7d3a1631</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <httpBody></httpBody>
@@ -11,7 +11,7 @@
    <httpBodyType></httpBodyType>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://katalon.atlassian.net/rest/api/2/serverInfo?</restUrl>
+   <restUrl>http://api.douban.com/v2/movie/top250?start=1&amp;count=1</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -30,13 +30,6 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-
-assertThat(response.getResponseText()).contains('Cloud')
-
-
-WS.verifyResponseStatusCode(response, 200)
-
-assertThat(response.getStatusCode()).isEqualTo(200)</verificationScript>
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
