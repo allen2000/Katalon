@@ -14,9 +14,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.m
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Katalon\\Test Cases\\API\\openapi\\femaleName\\20190314_083605\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Katalon\\Test Cases\\API\\swagger_petstore\\pet\\petstatus\\20190314_172441\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/API/openapi/femaleName', new TestCaseBinding('Test Cases/API/openapi/femaleName',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/API/swagger_petstore/pet/petstatus', new TestCaseBinding('Test Cases/API/swagger_petstore/pet/petstatus',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

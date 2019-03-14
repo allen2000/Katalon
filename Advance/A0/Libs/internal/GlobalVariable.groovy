@@ -19,6 +19,11 @@ public class GlobalVariable {
      */
     public static Object store_url
      
+    /**
+     * <p></p>
+     */
+    public static Object success_code
+     
 
     static {
         try {
@@ -28,6 +33,7 @@ public class GlobalVariable {
     
             sahutest_url = selectedVariables['sahutest_url']
             store_url = selectedVariables['store_url']
+            success_code = selectedVariables['success_code']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

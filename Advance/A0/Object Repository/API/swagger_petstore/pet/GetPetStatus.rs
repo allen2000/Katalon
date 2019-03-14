@@ -18,7 +18,7 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <variables>
-      <defaultValue>'sold'</defaultValue>
+      <defaultValue>findTestData('Swagger/getpetstatus').getValue(2, 1)</defaultValue>
       <description></description>
       <id>2d5d3b70-76b7-4481-bff0-dd74a8872091</id>
       <masked>false</masked>

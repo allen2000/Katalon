@@ -14,4 +14,9 @@
       <initValue>'http://automationpractice.com/index.php'</initValue>
       <name>store_url</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>200</initValue>
+      <name>success_code</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

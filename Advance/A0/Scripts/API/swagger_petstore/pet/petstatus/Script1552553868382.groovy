@@ -15,5 +15,5 @@ import internal.GlobalVariable as GlobalVariable
 
 reponse = WS.sendRequest(findTestObject('API/swagger_petstore/pet/GetPetStatus', [('status') : 'sold']))
 
-WS.verifyElementPropertyValue(reponse, '[0].name', 'hello kity')
+WS.verifyResponseStatusCode(reponse, GlobalVariable.success_code, FailureHandling.STOP_ON_FAILURE)
 
