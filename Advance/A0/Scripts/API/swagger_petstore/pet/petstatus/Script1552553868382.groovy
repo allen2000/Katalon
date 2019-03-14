@@ -13,13 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-response = WS.sendRequest(findTestObject('API/openapi/femaleName'))
+reponse = WS.sendRequest(findTestObject('API/swagger_petstore/pet/GetPetStatus', [('status') : 'sold']))
 
-WS.verifyElementPropertyValue(response, 'msg', '成功!')
-
-WS.verifyElementsCount(response, '', 3)
-
-WS.verifyElementsCount(response, 'data', 20)
-
-WS.verifyElementPropertyValue(response, 'data[2].femalename', '把勇气留在家')
+WS.verifyElementPropertyValue(reponse, '[0].name', 'hello kity')
 
