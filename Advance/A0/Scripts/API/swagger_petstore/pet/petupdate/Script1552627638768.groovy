@@ -13,9 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-response = WS.sendRequest(findTestObject('API/swagger_petstore/pet/GetPetStatus', [('status') : 'sold']))
+response = WS.sendRequest(findTestObject('API/swagger_petstore/pet/UpdatePetStatus'))
 
-WS.verifyResponseStatusCode(response, 200, FailureHandling.STOP_ON_FAILURE)
-
-WS.verifyElementPropertyValue(response, '[413].name', 'Bzom')
+WS.verifyElementPropertyValue(response, 'name', 'Bzon')
 
