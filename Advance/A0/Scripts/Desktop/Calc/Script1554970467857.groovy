@@ -36,12 +36,21 @@ driver = new WiniumDriver(new URL('http://localhost:9999'), option)
 
 Thread.sleep(1000)
 
-driver.findElement(By.name('七')).click()
+
+
+driver.findElement(By.id('num7Button')).click()
 
 driver.findElement(By.name('加')).click()
 
 driver.findElement(By.name('八')).click()
 
 driver.findElement(By.name('等于')).click()
+
+//println driver.findElement(By.name('七')).getAttribute('Name')
+
+println   driver.findElement(By.id('CalculatorResults')).getAttribute('Name')
+
+assert driver.findElement(By.id('CalculatorResults')).getAttribute('Name')=='显示为 169'
+
 
 //driver.close()
