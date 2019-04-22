@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Introduction</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c5c09b14-cb98-4f5e-9ce8-9b5a6adfb10c</testCaseGuid>
+   <variable>
+      <defaultValue>'ALLEN'</defaultValue>
+      <description></description>
+      <id>f4a711f7-8719-4456-a068-628056315731</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>'Welcome, ALLEN!'</defaultValue>
+      <description></description>
+      <id>dffbb2ce-7dd5-42ed-a8c5-0891f1679681</id>
+      <masked>false</masked>
+      <name>result</name>
+   </variable>
+</TestCaseEntity>

@@ -78,6 +78,58 @@ class VE {
 
 
 	/**
+	 * up
+	 */
+	@Keyword
+	def up_button() {
+
+		Robot robot = new Robot()
+
+		robot.keyPress(KeyEvent.VK_UP)
+		robot.keyRelease(KeyEvent.VK_UP)
+	}
+
+	/**
+	 * down
+	 */
+	@Keyword
+	def down_button() {
+
+		Robot robot = new Robot()
+
+		robot.keyPress(KeyEvent.VK_DOWN)
+		robot.keyRelease(KeyEvent.VK_DOWN)
+	}
+
+
+	/**
+	 * alt_down
+	 */
+	@Keyword
+	def alt_down() {
+
+		Robot robot = new Robot()
+
+		robot.keyPress(KeyEvent.VK_ALT)
+		robot.keyPress(KeyEvent.VK_DOWN)
+
+		robot.keyRelease(KeyEvent.VK_ALT)
+		robot.keyRelease(KeyEvent.VK_DOWN)
+	}
+
+	/**
+	 * tab
+	 */
+	@Keyword
+	def tab_button() {
+
+		Robot robot = new Robot()
+
+		robot.keyPress(KeyEvent.VK_TAB)
+		robot.keyRelease(KeyEvent.VK_TAB)
+	}
+
+	/**
 	 * Refresh browser
 	 */
 	@Keyword

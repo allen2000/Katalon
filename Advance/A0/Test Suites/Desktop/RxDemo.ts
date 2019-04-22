@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>RxDemo</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>8ba604b7-bbcc-4a33-9f4b-861d556dce30</testSuiteGuid>
+   <testCaseLink>
+      <guid>17e8edf7-1ffe-43a9-a0d3-3a7f7d7e985b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Desktop/RxDemo/Introduction</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>61b24677-9ea4-46a6-8fb6-e6180eaf99ad</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Desktop/RxDemo/Introduction</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>61b24677-9ea4-46a6-8fb6-e6180eaf99ad</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>name</value>
+         <variableId>f4a711f7-8719-4456-a068-628056315731</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>61b24677-9ea4-46a6-8fb6-e6180eaf99ad</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>result</value>
+         <variableId>dffbb2ce-7dd5-42ed-a8c5-0891f1679681</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
